@@ -1,0 +1,112 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/tło.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800%;
+    height: 50%;
+    background-image: url(img/Clouds-PNG-Free-Download.png);
+    background-repeat: no-repeat;
+    animation: cloud 30s linear infinite;
+}
+
+@keyframes cloud {
+    0% {
+        background-position: 1700px;
+    }
+
+    100% {
+        background-position: -400px;
+    }
+}
+
+
+.rain {
+    height: 100%;
+    background-image: url(img/rain.png);
+    animation: rain .3s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 10% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.rain:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    animation: light 4s linear infinite;
+}
+
+@keyframes light {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    11% {
+        opacity: 1;
+    }
+
+    14% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    21% {
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
